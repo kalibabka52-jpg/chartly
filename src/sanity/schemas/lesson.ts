@@ -62,8 +62,13 @@ export const lesson = defineType({
         { type: 'block' },
         { type: 'image', options: { hotspot: true } },
         {
-          type: 'code',
+          type: 'object',
+          name: 'codeBlock',
           title: 'Code Block',
+          fields: [
+            { name: 'language', title: 'Language', type: 'string' },
+            { name: 'code', title: 'Code', type: 'text' },
+          ],
         },
       ],
     }),
