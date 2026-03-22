@@ -44,9 +44,15 @@ export const lesson = defineType({
     }),
     defineField({
       name: 'videoUrl',
-      title: 'Video URL',
+      title: 'Video URL (legacy)',
       type: 'url',
-      description: 'YouTube, Vimeo, or Mux playback URL',
+      description: 'YouTube or Vimeo URL (use Mux Playback ID instead)',
+    }),
+    defineField({
+      name: 'muxPlaybackId',
+      title: 'Mux Playback ID',
+      type: 'string',
+      description: 'Mux video playback ID for streaming',
     }),
     defineField({
       name: 'content',
