@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { Button } from '@/components/atoms/Button'
 
 const navLinks = [
@@ -26,12 +27,20 @@ export function Navbar() {
           ))}
         </div>
         <div className="flex items-center gap-3">
-          <Link href="/login" className="text-sm font-medium text-brand-900/70 hover:text-brand-600 transition-[opacity]">
-            Login
-          </Link>
-          <Link href="/signup">
-            <Button size="sm">Start Free</Button>
-          </Link>
+          <SignedOut>
+            <Link href="/login" className="text-sm font-medium text-brand-900/70 hover:text-brand-600 transition-[opacity]">
+              Login
+            </Link>
+            <Link href="/signup">
+              <Button size="sm">Start Free</Button>
+            </Link>
+          </SignedOut>
+          <SignedIn>
+            <Link href="/dashboard">
+              <Button size="sm" variant="outline">Dashboard</Button>
+            </Link>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
         </div>
       </div>
     </nav>
