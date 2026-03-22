@@ -52,7 +52,7 @@ export async function GET(): Promise<NextResponse> {
     } catch { /* fallback below */ }
 
     const makeSparkline = (price: number) =>
-      Array.from({ length: 6 }, (_, i) => price * (1 + (Math.random() - 0.5) * 0.003))
+      Array.from({ length: 6 }, () => price * (1 + (Math.random() - 0.5) * 0.003))
 
     const data: PriceData[] = [
       { pair: 'EUR/USD', price: forexRates.EUR ? 1 / forexRates.EUR : FALLBACK[0].price, change: (Math.random() - 0.5) * 0.4, sparkline: [] },

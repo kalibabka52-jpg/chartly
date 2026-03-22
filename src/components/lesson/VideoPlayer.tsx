@@ -6,7 +6,7 @@ interface VideoPlayerProps {
   onComplete?: () => void
 }
 
-export function VideoPlayer({ xpReward, onComplete }: VideoPlayerProps) {
+export function VideoPlayer({ xpReward }: VideoPlayerProps) {
   const [playing, setPlaying] = useState(false)
   const [progress, setProgress] = useState(0)
 

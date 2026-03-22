@@ -1,5 +1,5 @@
 // src/lib/__tests__/mock-data.test.ts
-import { mockCourses, mockQuests, mockBadges, mockArticles, mockUserProgress, mockLeaderboard, mockCertificates } from '@/lib/mock-data'
+import { mockCourses, mockQuests, mockUserProgress, mockLeaderboard } from '@/lib/mock-data'
 
 describe('mock-data', () => {
   it('courses have required fields and valid categories', () => {

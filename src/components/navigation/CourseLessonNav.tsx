@@ -9,7 +9,7 @@ interface CourseLessonNavProps {
   onLessonSelect: (slug: string) => void
 }
 
-export function CourseLessonNav({ course, progress, activeLessonSlug, onLessonSelect }: CourseLessonNavProps) {
+export function CourseLessonNav({ course, progress, onLessonSelect }: CourseLessonNavProps) {
   const pct = getCourseProgress(course, progress)
   return (
     <aside className="w-72 bg-white border-r border-brand-100 flex flex-col overflow-hidden">
