@@ -1,0 +1,74 @@
+<h2>What's the overall vibe of the platform?</h2>
+<p class="subtitle">Pick the aesthetic direction that feels closest to what you're imagining</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="dark-premium" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a0f 0%, #12121e 50%, #0d0d18 100%); padding: 20px; font-family: sans-serif; min-height: 160px; position: relative; overflow: hidden;">
+      <div style="position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%);border-radius:50%;"></div>
+      <div style="position:absolute;bottom:-30px;left:-30px;width:140px;height:140px;background:radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 70%);border-radius:50%;"></div>
+      <div style="color:#a78bfa;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">PREMIUM COURSE</div>
+      <div style="color:#fff;font-size:18px;font-weight:800;line-height:1.2;margin-bottom:8px;">Master Trading<br>Psychology</div>
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        <div style="background:rgba(139,92,246,0.2);border:1px solid rgba(139,92,246,0.4);color:#a78bfa;padding:4px 10px;border-radius:20px;font-size:10px;">Advanced</div>
+        <div style="background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);color:#60a5fa;padding:4px 10px;border-radius:20px;font-size:10px;">42 Lessons</div>
+      </div>
+      <div style="position:absolute;bottom:16px;right:16px;width:36px;height:36px;background:linear-gradient(135deg,#7c3aed,#4f46e5);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+        <div style="width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:10px solid white;margin-left:2px;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Dark Premium</h3>
+      <p>Deep dark backgrounds, purple/violet glow accents, glassmorphism cards, cinematic feel. Think: Bloomberg Terminal meets Netflix. Sophisticated, high-trust, luxury.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="modern-clean" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #f8f7ff; padding: 20px; font-family: sans-serif; min-height: 160px; position: relative; overflow: hidden;">
+      <div style="position:absolute;top:0;right:0;width:120px;height:120px;background:linear-gradient(135deg,rgba(124,58,237,0.08),rgba(79,70,229,0.05));border-radius:0 0 0 120px;"></div>
+      <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">NEW LESSON</div>
+      <div style="color:#1e1b4b;font-size:17px;font-weight:800;margin-bottom:6px;">Technical Analysis<br>Fundamentals</div>
+      <div style="background:#fff;border:1px solid #ede9fe;border-radius:12px;padding:10px;margin-top:10px;box-shadow:0 2px 8px rgba(124,58,237,0.08);">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:32px;height:32px;background:linear-gradient(135deg,#7c3aed,#4f46e5);border-radius:8px;display:flex;align-items:center;justify-content:center;">
+            <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:9px solid white;margin-left:2px;"></div>
+          </div>
+          <div>
+            <div style="color:#1e1b4b;font-size:12px;font-weight:600;">Lesson 3 — Chart Patterns</div>
+            <div style="color:#7c3aed;font-size:10px;font-weight:500;">23 min · +150 XP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Modern Clean</h3>
+      <p>Light background, crisp whites, soft purple brand color, generous spacing. Think: Notion meets Linear. Clean, focused, professional — easy on the eyes for long study sessions.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="bold-financial" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(160deg, #0f1117 0%, #141820 100%); padding: 20px; font-family: sans-serif; min-height: 160px; position: relative; overflow: hidden;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;">
+        <div>
+          <div style="color:#22d3ee;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">LIVE MARKET</div>
+          <div style="color:#fff;font-size:20px;font-weight:900;margin-top:2px;">S&P 500</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="color:#4ade80;font-size:16px;font-weight:800;">+1.43%</div>
+          <div style="color:rgba(255,255,255,0.5);font-size:10px;">5,234.18</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:2px;align-items:flex-end;height:40px;margin-bottom:12px;">
+        ${[30,45,35,60,40,55,50,70,65,80].map((h,i) =>
+          `<div style="flex:1;background:${i > 7 ? '#4ade80' : 'rgba(34,211,238,0.3)'};height:${h}%;border-radius:2px 2px 0 0;"></div>`
+        ).join('')}
+      </div>
+      <div style="background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.3);color:#22d3ee;padding:6px 12px;border-radius:6px;font-size:11px;font-weight:600;display:inline-block;">📈 Watch Live →</div>
+    </div>
+    <div class="card-body">
+      <h3>Bold Financial</h3>
+      <p>Dark trading terminal aesthetic, cyan/green data accents, live charts front-and-center. Think: Trading View meets Binance. Financial-first brand identity — data is the hero.</p>
+    </div>
+  </div>
+
+</div>

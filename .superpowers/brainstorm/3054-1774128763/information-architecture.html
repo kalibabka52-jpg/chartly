@@ -1,0 +1,102 @@
+<h2>Section 1 — Information Architecture</h2>
+<p class="subtitle">All pages, routes, and how they connect. Does this cover everything you need?</p>
+
+<div style="font-family:sans-serif;display:flex;flex-direction:column;gap:28px;margin-top:8px;">
+
+  <!-- Public Zone -->
+  <div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <div style="background:#dcfce7;color:#16a34a;font-size:10px;font-weight:700;letter-spacing:2px;padding:4px 10px;border-radius:100px;text-transform:uppercase;">Public — No Login Required</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;">
+      <div style="background:#f8f7ff;border:1.5px solid #ede9fe;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/ (root)</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Landing Page</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Hero · Features · Course preview · Pricing · Testimonials · CTA</div>
+      </div>
+      <div style="background:#f8f7ff;border:1.5px solid #ede9fe;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/blog</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Blog Index</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Article cards · Category filters · Live stock ticker banner</div>
+      </div>
+      <div style="background:#f8f7ff;border:1.5px solid #ede9fe;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/blog/[slug]</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Blog Article</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Article body · Author · Tags · Embedded stock widgets · Related posts</div>
+      </div>
+      <div style="background:#f8f7ff;border:1.5px solid #ede9fe;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/login · /signup</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Auth Pages</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Login form · Signup form · Social auth buttons</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow -->
+  <div style="text-align:center;color:#a78bfa;font-size:20px;letter-spacing:8px;">↓ paid access gate ↓</div>
+
+  <!-- Gated Zone -->
+  <div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <div style="background:#ede9fe;color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:2px;padding:4px 10px;border-radius:100px;text-transform:uppercase;">Gated — Paid Users Only</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;">
+      <div style="background:#faf5ff;border:1.5px solid #c4b5fd;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/dashboard</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Dashboard</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Welcome back · Continue learning · Active quests · Recent XP · Quick stats</div>
+      </div>
+      <div style="background:#faf5ff;border:1.5px solid #c4b5fd;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/courses</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Course Catalog</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">All courses · Filters (Forex/Crypto/Other) · Progress indicators</div>
+      </div>
+      <div style="background:#faf5ff;border:1.5px solid #c4b5fd;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/courses/[slug]</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Course Page</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Overview · Curriculum · Instructor · Quest badge · Enroll CTA</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+      <div style="background:#faf5ff;border:1.5px solid #c4b5fd;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/courses/[slug]/[lesson]</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Lesson Page</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Video player · Notes panel · Comments · XP reward · Next lesson CTA</div>
+      </div>
+      <div style="background:#faf5ff;border:1.5px solid #c4b5fd;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/profile</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">User Profile</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Avatar · Level · Badges earned · Quest history · Certificates</div>
+      </div>
+      <div style="background:#faf5ff;border:1.5px solid #c4b5fd;border-radius:12px;padding:14px;">
+        <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:4px;">/leaderboard</div>
+        <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Leaderboard</div>
+        <div style="color:#6b7280;font-size:11px;line-height:1.5;">Weekly/monthly rankings · XP totals · Quest completions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Layout note -->
+  <div style="background:#f8f7ff;border:1px dashed #c4b5fd;border-radius:12px;padding:14px;display:flex;gap:12px;align-items:flex-start;">
+    <div style="color:#7c3aed;font-size:18px;">📐</div>
+    <div>
+      <div style="color:#1e1b4b;font-weight:700;font-size:13px;margin-bottom:4px;">Shared Layouts</div>
+      <div style="color:#6b7280;font-size:11px;line-height:1.6;"><strong style="color:#1e1b4b;">Public layout:</strong> top navbar (logo + nav links + login CTA) · sticky live ticker strip · footer<br>
+      <strong style="color:#1e1b4b;">Platform layout:</strong> left sidebar (nav + quest progress + XP bar) · top bar (search + notifications + avatar)</div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:24px;text-align:center;">
+  <div class="options" style="display:inline-flex;gap:12px;">
+    <div class="option" data-choice="approve" onclick="toggleSelect(this)" style="padding:12px 24px;">
+      <div class="letter">✓</div>
+      <div class="content"><h3>Looks good</h3><p>Proceed to component design</p></div>
+    </div>
+    <div class="option" data-choice="changes" onclick="toggleSelect(this)" style="padding:12px 24px;">
+      <div class="letter">✎</div>
+      <div class="content"><h3>Need changes</h3><p>Tell me in terminal</p></div>
+    </div>
+  </div>
+</div>

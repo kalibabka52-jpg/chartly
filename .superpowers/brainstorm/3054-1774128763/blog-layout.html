@@ -1,0 +1,179 @@
+<h2>Section 5 — Blog Layout</h2>
+<p class="subtitle">Public blog index + single article with embedded live market data</p>
+
+<div style="font-family:sans-serif;display:flex;flex-direction:column;gap:28px;">
+
+  <!-- Blog Index -->
+  <div>
+    <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">Blog Index — /blog</div>
+    <div style="border:1.5px solid #ede9fe;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(124,58,237,0.08);">
+      <!-- Ticker -->
+      <div style="background:#1e1b4b;padding:7px 16px;display:flex;gap:20px;font-size:10px;">
+        <span style="color:#a78bfa;font-weight:700;flex-shrink:0;">LIVE</span>
+        <span style="color:#fff;">EUR/USD <span style="color:#4ade80;">▲ 1.0892</span></span>
+        <span style="color:#fff;">GBP/USD <span style="color:#f87171;">▼ 1.2731</span></span>
+        <span style="color:#fff;">BTC/USD <span style="color:#4ade80;">▲ 68,420</span></span>
+        <span style="color:#fff;">ETH/USD <span style="color:#4ade80;">▲ 3,812</span></span>
+        <span style="color:#fff;">XAU/USD <span style="color:#f87171;">▼ 2,341</span></span>
+      </div>
+      <!-- Navbar -->
+      <div style="background:#fff;border-bottom:1px solid #ede9fe;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;">
+        <div style="color:#7c3aed;font-weight:900;font-size:14px;">Chartly</div>
+        <div style="display:flex;gap:16px;font-size:10px;color:#6b7280;">
+          <span>Courses</span><span style="color:#7c3aed;font-weight:700;border-bottom:2px solid #7c3aed;padding-bottom:1px;">Blog</span><span>Pricing</span>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <div style="border:1px solid #7c3aed;color:#7c3aed;padding:4px 10px;border-radius:6px;font-size:10px;font-weight:700;">Login</div>
+          <div style="background:#7c3aed;color:#fff;padding:4px 10px;border-radius:6px;font-size:10px;font-weight:700;">Start Free</div>
+        </div>
+      </div>
+      <!-- Hero article -->
+      <div style="background:linear-gradient(135deg,#1e1b4b,#4f46e5);padding:28px 24px;display:flex;gap:20px;align-items:center;">
+        <div style="flex:1;">
+          <div style="background:rgba(167,139,250,0.2);color:#a78bfa;display:inline-block;padding:3px 10px;border-radius:100px;font-size:9px;font-weight:700;margin-bottom:10px;">FOREX ANALYSIS</div>
+          <div style="color:#fff;font-size:20px;font-weight:900;line-height:1.2;margin-bottom:8px;">EUR/USD Breaks Key Resistance — What Traders Should Watch Next</div>
+          <div style="color:rgba(255,255,255,0.6);font-size:11px;line-height:1.5;margin-bottom:12px;">The pair cleared the 1.0900 level on strong volume. Here's the technical setup and what the daily chart is signalling...</div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:24px;height:24px;background:linear-gradient(135deg,#a78bfa,#7c3aed);border-radius:50%;"></div>
+            <span style="color:rgba(255,255,255,0.7);font-size:10px;">by Marco V. · Mar 21, 2026 · 6 min read</span>
+            <div style="background:#7c3aed;color:#fff;padding:5px 14px;border-radius:7px;font-size:10px;font-weight:700;margin-left:auto;">Read Article →</div>
+          </div>
+        </div>
+        <div style="width:140px;height:90px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;display:flex;align-items:flex-end;padding:8px;gap:2px;flex-shrink:0;">
+          ${[40,55,45,70,50,65,60,80,72,90].map((h,i) =>
+            `<div style="flex:1;height:${h}%;background:${i>=8?'#4ade80':'rgba(167,139,250,0.4)'};border-radius:2px 2px 0 0;"></div>`
+          ).join('')}
+        </div>
+      </div>
+      <!-- Filters + grid -->
+      <div style="background:#f8f7ff;padding:16px 20px;">
+        <div style="display:flex;gap:8px;margin-bottom:14px;align-items:center;">
+          <span style="color:#1e1b4b;font-size:10px;font-weight:700;">Filter:</span>
+          <div style="background:#7c3aed;color:#fff;padding:4px 12px;border-radius:100px;font-size:10px;font-weight:700;">All</div>
+          <div style="background:#fff;color:#6b7280;border:1px solid #ede9fe;padding:4px 12px;border-radius:100px;font-size:10px;">Forex</div>
+          <div style="background:#fff;color:#6b7280;border:1px solid #ede9fe;padding:4px 12px;border-radius:100px;font-size:10px;">Crypto</div>
+          <div style="background:#fff;color:#6b7280;border:1px solid #ede9fe;padding:4px 12px;border-radius:100px;font-size:10px;">Psychology</div>
+          <div style="background:#fff;color:#6b7280;border:1px solid #ede9fe;padding:4px 12px;border-radius:100px;font-size:10px;">Basics</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+          <div style="background:#fff;border:1px solid #ede9fe;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(124,58,237,0.06);">
+            <div style="background:linear-gradient(135deg,#7c3aed,#4f46e5);height:48px;display:flex;align-items:center;padding:0 12px;">
+              <span style="color:rgba(255,255,255,0.8);font-size:9px;font-weight:700;text-transform:uppercase;">Forex</span>
+            </div>
+            <div style="padding:10px;">
+              <div style="color:#1e1b4b;font-weight:700;font-size:11px;margin-bottom:4px;line-height:1.3;">How to Trade the London Session Effectively</div>
+              <div style="color:#9ca3af;font-size:9px;">Mar 20 · 4 min</div>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #ede9fe;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(124,58,237,0.06);">
+            <div style="background:linear-gradient(135deg,#be185d,#9333ea);height:48px;display:flex;align-items:center;padding:0 12px;">
+              <span style="color:rgba(255,255,255,0.8);font-size:9px;font-weight:700;text-transform:uppercase;">Crypto</span>
+            </div>
+            <div style="padding:10px;">
+              <div style="color:#1e1b4b;font-weight:700;font-size:11px;margin-bottom:4px;line-height:1.3;">Bitcoin Halving 2026: What History Tells Us</div>
+              <div style="color:#9ca3af;font-size:9px;">Mar 19 · 7 min</div>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #ede9fe;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(124,58,237,0.06);">
+            <div style="background:linear-gradient(135deg,#0f766e,#0891b2);height:48px;display:flex;align-items:center;padding:0 12px;">
+              <span style="color:rgba(255,255,255,0.8);font-size:9px;font-weight:700;text-transform:uppercase;">Psychology</span>
+            </div>
+            <div style="padding:10px;">
+              <div style="color:#1e1b4b;font-weight:700;font-size:11px;margin-bottom:4px;line-height:1.3;">Why Most Traders Blow Their Account in Month 3</div>
+              <div style="color:#9ca3af;font-size:9px;">Mar 18 · 5 min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single Article -->
+  <div>
+    <div style="color:#7c3aed;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">Single Article — /blog/[slug]</div>
+    <div style="border:1.5px solid #ede9fe;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(124,58,237,0.08);">
+      <div style="background:#1e1b4b;padding:7px 16px;display:flex;gap:20px;font-size:10px;">
+        <span style="color:#a78bfa;font-weight:700;">LIVE</span>
+        <span style="color:#fff;">EUR/USD <span style="color:#4ade80;">▲ 1.0892</span></span>
+        <span style="color:#fff;">BTC/USD <span style="color:#4ade80;">▲ 68,420</span></span>
+      </div>
+      <div style="background:#fff;border-bottom:1px solid #ede9fe;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;">
+        <div style="color:#7c3aed;font-weight:900;font-size:14px;">Chartly</div>
+        <div style="display:flex;gap:6px;">
+          <div style="border:1px solid #7c3aed;color:#7c3aed;padding:4px 10px;border-radius:6px;font-size:10px;font-weight:700;">Login</div>
+          <div style="background:#7c3aed;color:#fff;padding:4px 10px;border-radius:6px;font-size:10px;font-weight:700;">Start Free</div>
+        </div>
+      </div>
+      <div style="background:#f8f7ff;padding:20px 24px;display:grid;grid-template-columns:1fr 220px;gap:20px;">
+        <!-- Article body -->
+        <div>
+          <div style="background:#ede9fe;color:#7c3aed;display:inline-block;padding:3px 10px;border-radius:100px;font-size:9px;font-weight:700;margin-bottom:10px;">FOREX ANALYSIS</div>
+          <div style="color:#1e1b4b;font-size:18px;font-weight:900;line-height:1.2;margin-bottom:8px;">EUR/USD Breaks Key Resistance — What Traders Should Watch Next</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #ede9fe;">
+            <div style="width:24px;height:24px;background:linear-gradient(135deg,#7c3aed,#4f46e5);border-radius:50%;"></div>
+            <span style="color:#6b7280;font-size:10px;">Marco V. · Mar 21, 2026 · 6 min read</span>
+          </div>
+          <div style="color:#374151;font-size:11px;line-height:1.8;margin-bottom:12px;">EUR/USD pushed through the key 1.0900 resistance zone during Tuesday's London session, a level that has acted as a ceiling for the past three weeks. The breakout came on above-average volume...</div>
+          <!-- Inline stock widget -->
+          <div style="background:#1e1b4b;border-radius:10px;padding:12px 14px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="color:#a78bfa;font-size:9px;font-weight:700;text-transform:uppercase;margin-bottom:2px;">Live · EUR/USD</div>
+              <div style="color:#fff;font-size:18px;font-weight:900;">1.0892</div>
+            </div>
+            <div style="text-align:right;">
+              <div style="color:#4ade80;font-size:13px;font-weight:700;">▲ +0.12%</div>
+              <div style="color:rgba(255,255,255,0.4);font-size:9px;">Updated just now</div>
+            </div>
+            <div style="display:flex;gap:2px;align-items:flex-end;height:32px;margin-left:12px;">
+              ${[50,60,45,70,55,65,60,80,75,90].map((h,i) =>
+                `<div style="width:6px;height:${h}%;background:${i>=8?'#4ade80':'rgba(167,139,250,0.35)'};border-radius:2px 2px 0 0;"></div>`
+              ).join('')}
+            </div>
+          </div>
+          <div style="color:#374151;font-size:11px;line-height:1.8;">The daily close above 1.0900 is significant. Traders will now be watching whether the level holds as support on any retracement. The next target zone is 1.0960–1.1000...</div>
+        </div>
+        <!-- Sidebar -->
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <!-- CTA for non-logged users -->
+          <div style="background:linear-gradient(135deg,#7c3aed,#4f46e5);border-radius:12px;padding:14px;text-align:center;">
+            <div style="font-size:20px;margin-bottom:6px;">📚</div>
+            <div style="color:#fff;font-weight:800;font-size:12px;margin-bottom:4px;">Want to learn to trade EUR/USD?</div>
+            <div style="color:rgba(255,255,255,0.7);font-size:10px;margin-bottom:10px;">Our Forex Fundamentals course covers exactly this.</div>
+            <div style="background:#fff;color:#7c3aed;padding:7px;border-radius:8px;font-size:10px;font-weight:800;">Start Learning →</div>
+          </div>
+          <!-- Related live pairs -->
+          <div style="background:#fff;border:1px solid #ede9fe;border-radius:12px;padding:12px;">
+            <div style="color:#7c3aed;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Related Pairs — Live</div>
+            <div style="display:flex;flex-direction:column;gap:6px;font-size:10px;">
+              <div style="display:flex;justify-content:space-between;"><span style="color:#1e1b4b;font-weight:600;">GBP/USD</span><span style="color:#f87171;font-weight:700;">▼ 1.2731</span></div>
+              <div style="display:flex;justify-content:space-between;"><span style="color:#1e1b4b;font-weight:600;">USD/JPY</span><span style="color:#4ade80;font-weight:700;">▲ 151.42</span></div>
+              <div style="display:flex;justify-content:space-between;"><span style="color:#1e1b4b;font-weight:600;">XAU/USD</span><span style="color:#f87171;font-weight:700;">▼ 2,341</span></div>
+            </div>
+          </div>
+          <!-- Related articles -->
+          <div style="background:#fff;border:1px solid #ede9fe;border-radius:12px;padding:12px;">
+            <div style="color:#7c3aed;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Related Articles</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="color:#1e1b4b;font-size:10px;font-weight:600;line-height:1.3;cursor:pointer;">→ How to Trade the London Session</div>
+              <div style="color:#1e1b4b;font-size:10px;font-weight:600;line-height:1.3;cursor:pointer;">→ Support & Resistance Explained</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:24px;text-align:center;">
+  <div class="options" style="display:inline-flex;gap:12px;">
+    <div class="option" data-choice="approve" onclick="toggleSelect(this)" style="padding:12px 24px;">
+      <div class="letter">✓</div>
+      <div class="content"><h3>Looks good</h3><p>Proceed to animations spec</p></div>
+    </div>
+    <div class="option" data-choice="changes" onclick="toggleSelect(this)" style="padding:12px 24px;">
+      <div class="letter">✎</div>
+      <div class="content"><h3>Need changes</h3><p>Tell me in terminal</p></div>
+    </div>
+  </div>
+</div>
