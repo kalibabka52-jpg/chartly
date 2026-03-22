@@ -56,7 +56,7 @@ export function LessonClient({ course, lesson, prevLesson, nextLesson, activeLes
       <div className="flex-1 overflow-y-auto p-8">
         <div className="max-w-3xl mx-auto">
           {/* Video */}
-          <VideoPlayer xpReward={lesson.xpReward} onComplete={handleComplete} />
+          <VideoPlayer xpReward={lesson.xpReward} onComplete={handleComplete} playbackId={lesson.muxPlaybackId} />
 
           {/* Tabs */}
           <div className="flex gap-1 my-6 bg-brand-50 p-1 rounded-xl w-fit">
