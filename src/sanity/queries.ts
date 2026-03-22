@@ -49,6 +49,7 @@ export const lessonBySlugQuery = groq`
     xp,
     duration,
     videoUrl,
+    muxPlaybackId,
     content,
     course->{
       _id,
